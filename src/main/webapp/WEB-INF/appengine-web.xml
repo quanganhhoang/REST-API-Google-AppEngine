@@ -5,7 +5,7 @@
   <threadsafe>true</threadsafe>
   <service>cloudsql</service>
   <env-variables>
-    <env-var name="RDS_JDBC_URL" value="jdbc:mysql://google/skier-db" />
+    <env-var name="RDS_JDBC_URL" value="jdbc:mysql://google/skierapi" />
     <env-var name="RDS_USERNAME" value="cs6650-user" />
     <env-var name="RDS_PW" value="cs6650-user" />
     <env-var name="GOOGLE_CLOUD_SQL_INSTANCE" value="java-servlet-example:us-west2:skier-db" />

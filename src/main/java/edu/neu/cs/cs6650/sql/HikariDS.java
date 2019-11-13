@@ -51,7 +51,7 @@ public class HikariDS {
 
       dataSource.addDataSourceProperty("socketFactory", "com.google.cloud.sql.mysql.SocketFactory");
       dataSource.addDataSourceProperty("cloudSqlInstance", GOOGLE_CLOUD_SQL_INSTANCE);
-//      dataSource.addDataSourceProperty("useSSL", "false");
+      dataSource.addDataSourceProperty("useSSL", "false");
     }
 
   public static Connection getConnection() throws SQLException {
