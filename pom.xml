@@ -221,7 +221,7 @@
           <artifactId>appengine-maven-plugin</artifactId>
           <!-- Must specify deploy projectId and version -->
           <configuration>
-            <deploy.projectId>cs6650-skierapi</deploy.projectId>
+            <deploy.projectId>java-servlet-example</deploy.projectId>
             <deploy.version>1</deploy.version>
           </configuration>
           <version>2.2.0</version>
