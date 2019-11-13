@@ -16,7 +16,7 @@ public class HikariDS {
   private static final String JDBC_PW = System.getenv("RDS_PW");
 
   private static final String JDBC_URL = System.getenv("RDS_JDBC_URL");
-  private static final String GOOGLE_CLOUD_SQL_INSTANCE = System.getenv("CLOUD_SQL_INSTANCE");
+  private static final String GOOGLE_CLOUD_SQL_INSTANCE = System.getenv("GOOGLE_CLOUD_SQL_INSTANCE");
 
   private static HikariDataSource dataSource = new HikariDataSource();
     // HikariCP uses milliseconds for all time values.
@@ -27,7 +27,7 @@ public class HikariDS {
       dataSource.setJdbcUrl(JDBC_URL);
 //      dataSource.setUsername(JDBC_USERNAME);
 //      dataSource.setPassword(JDBC_PW);
-//      dataSource.setDriverClassName(JDBC_DRIVER);
+      dataSource.setDriverClassName(JDBC_DRIVER);
       dataSource.setMaximumPoolSize(20);
       // controls the max time that a connection is allowed to sit idle in the pool
 //      dataSource.setIdleTimeout(28740000);

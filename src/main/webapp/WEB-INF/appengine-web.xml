@@ -8,7 +8,7 @@
     <env-var name="RDS_JDBC_URL" value="jdbc:mysql://google/skier-db" />
     <env-var name="RDS_USERNAME" value="cs6650-user" />
     <env-var name="RDS_PW" value="cs6650-user" />
-    <env-var name="GOOGLE_CLOUD_SQL_INSTANCE" value="java-servlet-ple:us-west2:skier-db" />
+    <env-var name="GOOGLE_CLOUD_SQL_INSTANCE" value="java-servlet-example:us-west2:skier-db" />
   </env-variables>
   <system-properties>
     <property name="cloudsql" value="jdbc:mysql://google/${database}?useSSL=false&amp;cloudSqlInstance=${INSTANCE_CONNECTION_NAME}&amp;socketFactory=com.google.cloud.sql.mysql.SocketFactory&amp;user=${user}&amp;password=${password}" />
