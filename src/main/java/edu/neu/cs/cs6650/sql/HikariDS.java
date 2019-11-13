@@ -10,8 +10,8 @@ import org.apache.logging.log4j.Logger;
 public class HikariDS {
   private static final Logger logger = LogManager.getLogger(HikariDS.class.getName());
 
-//  private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-private static final String JDBC_DRIVER = "com.mysql.jdbc.GoogleDriver";
+  private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+
 //  private static final String LOCALHOST_JDBC_URL = "jdbc:mysql://localhost:3306/skierapi?useSSL=false&serverTimezone=UTC";
   private static final String JDBC_USERNAME = System.getenv("RDS_USERNAME");
   private static final String JDBC_PW = System.getenv("RDS_PW");
