@@ -73,7 +73,6 @@ modules.xml
 *.class
 
 # app.yaml
-app.yaml
 /src/main/webapp/WEB-INF/appengine-web.xml
 
 # End of https://www.gitignore.io/api/intellij+all
