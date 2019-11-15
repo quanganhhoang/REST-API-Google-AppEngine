@@ -7,7 +7,7 @@ handlers:
 
 automatic_scaling:
   min_num_instances: 1
-  max_num_instances: 4
+  max_num_instances: 10
 #  cool_down_period_sec: 180
 #  cpu_utilization:
 #    target_utilization: 0.6
