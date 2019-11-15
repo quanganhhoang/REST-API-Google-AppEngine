@@ -22,14 +22,14 @@ public class HikariDS {
   private static HikariDataSource dataSource = new HikariDataSource();
     // HikariCP uses milliseconds for all time values.
     static {
-      logger.info("JDBC URL: " + JDBC_URL);
-      logger.info("JDBC_USERNAME: " + JDBC_USERNAME);
-      logger.info("JDBC_PW: " + JDBC_PW);
+//      logger.info("JDBC URL: " + JDBC_URL);
+//      logger.info("JDBC_USERNAME: " + JDBC_USERNAME);
+//      logger.info("JDBC_PW: " + JDBC_PW);
       dataSource.setJdbcUrl(JDBC_URL);
       dataSource.setUsername(JDBC_USERNAME);
       dataSource.setPassword(JDBC_PW);
       dataSource.setDriverClassName(JDBC_DRIVER);
-      dataSource.setMaximumPoolSize(40);
+      dataSource.setMaximumPoolSize(60);
       // controls the max time that a connection is allowed to sit idle in the pool
 //      dataSource.setIdleTimeout(28740000);
       // controls the min number of idle connections HikariCP tries to maintain in the pool, including both idle and in-use connections
