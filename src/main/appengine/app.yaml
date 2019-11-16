@@ -1,5 +1,5 @@
 runtime: java
-env: flex
+env: standard
 
 handlers:
   - url: /.*
@@ -8,4 +8,6 @@ handlers:
 automatic_scaling:
   cool_down_period_sec: 180
   target_cpu_utilization: 0.8
-  max_concurrent_requests: 80
+  target_throughput_utilization: 0.6
+  max_concurrent_requests: 20
+  max_instances: 50
