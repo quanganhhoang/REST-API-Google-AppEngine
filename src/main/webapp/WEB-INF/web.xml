@@ -5,10 +5,6 @@
 <web-app>
   <display-name>CS 6650 Skier API - Jersey</display-name>
 
-  <listener>
-    <listener-class>edu.neu.cs.cs6650.servlet.MainServletContextListener</listener-class>
-  </listener>
-
   <servlet>
     <servlet-name>JerseyServlet</servlet-name>
     <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
