@@ -29,7 +29,7 @@ public class HikariDS {
       dataSource.setUsername(JDBC_USERNAME);
       dataSource.setPassword(JDBC_PW);
       dataSource.setDriverClassName(JDBC_DRIVER);
-      dataSource.setMaximumPoolSize(30);
+      dataSource.setMaximumPoolSize(5);
       // controls the max time that a connection is allowed to sit idle in the pool
 //      dataSource.setIdleTimeout(28740000);
       // controls the min number of idle connections HikariCP tries to maintain in the pool, including both idle and in-use connections
